@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI_Tema5_Ejer1_Componente", "DI_Tema5_Ejer1_Componente\DI_Tema5_Ejer1_Componente.csproj", "{0DC333DF-1434-4687-A2A2-182FA9B9AE15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormularioDePrueba", "FormularioDePrueba\FormularioDePrueba.csproj", "{D5F03998-C471-4382-A155-F440F15DA81E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DC333DF-1434-4687-A2A2-182FA9B9AE15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC333DF-1434-4687-A2A2-182FA9B9AE15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC333DF-1434-4687-A2A2-182FA9B9AE15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC333DF-1434-4687-A2A2-182FA9B9AE15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F03998-C471-4382-A155-F440F15DA81E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F03998-C471-4382-A155-F440F15DA81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F03998-C471-4382-A155-F440F15DA81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F03998-C471-4382-A155-F440F15DA81E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23B0B2BB-B79C-4034-9429-37AB638500C5}
+	EndGlobalSection
+EndGlobal
