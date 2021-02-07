@@ -43,7 +43,7 @@ namespace FormularioDePrueba
                 }
                 else
                 {
-                    this.Text = "No más pequeño de 0";
+                    label1.Text = "la separacón no debe ser más pequeña de 0";
                 }
             }
         }
@@ -60,7 +60,7 @@ namespace FormularioDePrueba
 
         private void LabelTextBox_CambiarSeparacion(object sender, EventArgs e)
         {
-            this.Text = string.Format("La separación es de: {0} entre label y textbox", sep);
+            label1.Text = string.Format("La separación es de: {0} entre label y textbox", sep);
         }
     }
 }
