@@ -29,26 +29,13 @@ namespace FormularioDePrueba
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelTextBox1 = new DI_Tema5_Ejer1_Componente.LabelTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnMas = new System.Windows.Forms.Button();
             this.btnMenos = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelTextBox1 = new DI_Tema5_Ejer1_Componente.LabelTextBox();
             this.SuspendLayout();
-            // 
-            // labelTextBox1
-            // 
-            this.labelTextBox1.Location = new System.Drawing.Point(202, 121);
-            this.labelTextBox1.Name = "labelTextBox1";
-            this.labelTextBox1.Posicion = DI_Tema5_Ejer1_Componente.ePosicion.IZQUIERDA;
-            this.labelTextBox1.Separacion = 0;
-            this.labelTextBox1.Size = new System.Drawing.Size(216, 20);
-            this.labelTextBox1.TabIndex = 0;
-            this.labelTextBox1.TextLbl = "label1";
-            this.labelTextBox1.TextTxt = "";
-            this.labelTextBox1.CambiaPosición += new System.EventHandler(this.LabelTextBox_CambiaPosición);
-            this.labelTextBox1.CambiarSeparacion += new System.EventHandler(this.LabelTextBox_CambiarSeparacion);
-            this.labelTextBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             // 
             // button1
             // 
@@ -89,11 +76,37 @@ namespace FormularioDePrueba
             this.btnMenos.UseVisualStyleBackColor = true;
             this.btnMenos.Click += new System.EventHandler(this.btnCambioSep);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(461, 127);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "label2";
+            // 
+            // labelTextBox1
+            // 
+            this.labelTextBox1.Location = new System.Drawing.Point(202, 121);
+            this.labelTextBox1.Name = "labelTextBox1";
+            this.labelTextBox1.Posicion = DI_Tema5_Ejer1_Componente.ePosicion.IZQUIERDA;
+            this.labelTextBox1.PswChr = '+';
+            this.labelTextBox1.Separacion = 0;
+            this.labelTextBox1.Size = new System.Drawing.Size(216, 20);
+            this.labelTextBox1.TabIndex = 0;
+            this.labelTextBox1.TextLbl = "label1";
+            this.labelTextBox1.TextTxt = "";
+            this.labelTextBox1.CambiaPosición += new System.EventHandler(this.LabelTextBox_CambiaPosición);
+            this.labelTextBox1.CambiarSeparacion += new System.EventHandler(this.LabelTextBox_CambiarSeparacion);
+            this.labelTextBox1.TxtChanged += new System.EventHandler(this.labelTextBox1_TxtChanged);
+            this.labelTextBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(510, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnMenos);
             this.Controls.Add(this.btnMas);
             this.Controls.Add(this.label1);
@@ -113,6 +126,7 @@ namespace FormularioDePrueba
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMas;
         private System.Windows.Forms.Button btnMenos;
+        private System.Windows.Forms.Label label2;
     }
 }
 

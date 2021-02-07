@@ -23,19 +23,19 @@ namespace DI_Tema5_Ejer1_Componente
         }
 
         /*=========================================================================
-            db    88""Yb    db    88""Yb 88 888888 88b 88  dP""b8 88    db   
-           dPYb   88__dP   dPYb   88__dP 88 88__   88Yb88 dP   `" 88   dPYb  
-          dP__Yb  88"""   dP__Yb  88"Yb  88 88""   88 Y88 Yb      88  dP__Yb 
-         dP""""Yb 88     dP""""Yb 88  Yb 88 888888 88  Y8  YboodP 88 dP""""Yb
+            88""Yb 88""Yb  dP"Yb  88""Yb 88 888888 8888b.     db    8888b.  888888 .dP"Y8
+            88__dP 88__dP dP   Yb 88__dP 88 88__    8I  Yb   dPYb    8I  Yb 88__   `Ybo."
+            88"""  88"Yb  Yb   dP 88"""  88 88""    8I  dY  dP__Yb   8I  dY 88""   o.`Y8b
+            88     88  Yb  YbodP  88     88 888888 8888Y"  dP""""Yb 8888Y"  888888 8bodP'
+
          ========================================================================== */
+
         //Propiedad Apariencia ====================================================
 
         private ePosicion posicion = ePosicion.IZQUIERDA;
-
         [Category("Appearance")]
         [Description("Indica si la label se situa a la izquiera del textbox " +
             "o a la derecha")]
-
         public ePosicion Posicion
         {
             //set y get
@@ -68,20 +68,13 @@ namespace DI_Tema5_Ejer1_Componente
             }
         }
 
-        /*=========================================================================
-           8888b.  888888 .dP"Y8 88  dP""b8 88b 88
-            8I  Yb 88__   `Ybo." 88 dP   `" 88Yb88
-            8I  dY 88""   o.`Y8b 88 Yb  "88 88 Y88
-           88888Y  888888 8bodP' 88  YboodP 88  Y8
-       ========================================================================== */
 
-        //Propiedad Diseño *****************************
-        private int separacion = 0;
+        //Propiedad Diseño ====================================================
 
+        private int separacion = 0; //variable privada
         [Category("Design")]
         [Description("Los pixels de separación entre el label y el texbox")]
-
-        public int Separacion
+        public int Separacion //setters y getters
         {
             set
             {
@@ -104,7 +97,6 @@ namespace DI_Tema5_Ejer1_Componente
                 return separacion;
             }
         }
-
         /*===========================================================
           88""Yb 88   88 88""Yb 88     88  dP""b8    db    .dP"Y8
           88__dP 88   88 88__dP 88     88 dP   `"   dPYb   `Ybo."
@@ -136,11 +128,26 @@ namespace DI_Tema5_Ejer1_Componente
             set
             {
                 textBox1.Text = value;
-          
+               
             }
             get
             {
                 return textBox1.Text;
+            }
+        }
+
+        private char pswChr;
+        [Category("Desing")]
+        [Description("enlaza con la propiedad PasswordChar del Textbox interno.")]
+        public char PswChr
+        {
+            set
+            {
+                textBox1.PasswordChar = value;
+            }
+            get
+            {
+                return textBox1.PasswordChar;
             }
         }
 
@@ -188,6 +195,14 @@ namespace DI_Tema5_Ejer1_Componente
             this.OnKeyUp(e);
         }
 
+        private void Txt_change(object sender, EventArgs e)
+        {
+            if (TxtChanged != null)
+            {
+                TxtChanged(this, new EventArgs());
+            }
+        }
+
         /*=======================================================================
             dP""b8 88""Yb 888888    db    88""Yb
            dP   `" 88__dP 88__     dPYb   88__dP
@@ -225,7 +240,6 @@ namespace DI_Tema5_Ejer1_Componente
         {
             recolocar();
         }
-
 
     }
 

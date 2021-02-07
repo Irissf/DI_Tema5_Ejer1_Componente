@@ -62,5 +62,10 @@ namespace FormularioDePrueba
         {
             label1.Text = string.Format("La separación es de: {0} entre label y textbox", sep);
         }
+
+        private void labelTextBox1_TxtChanged(object sender, EventArgs e)
+        {
+            label2.Text = "El texto cambia";
+        }
     }
 }
