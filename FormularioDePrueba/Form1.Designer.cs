@@ -59,7 +59,7 @@ namespace FormularioDePrueba
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label1.Location = new System.Drawing.Point(224, 107);
+            this.label1.Location = new System.Drawing.Point(223, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 14);
             this.label1.TabIndex = 2;
@@ -100,7 +100,7 @@ namespace FormularioDePrueba
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label2.Location = new System.Drawing.Point(224, 140);
+            this.label2.Location = new System.Drawing.Point(223, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 14);
             this.label2.TabIndex = 5;
@@ -110,7 +110,7 @@ namespace FormularioDePrueba
             // 
             this.labelTextBox1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTextBox1.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.labelTextBox1.Location = new System.Drawing.Point(227, 60);
+            this.labelTextBox1.Location = new System.Drawing.Point(226, 12);
             this.labelTextBox1.Name = "labelTextBox1";
             this.labelTextBox1.Posicion = DI_Tema5_Ejer1_Componente.ePosicion.IZQUIERDA;
             this.labelTextBox1.PswChr = '\0';
@@ -133,7 +133,7 @@ namespace FormularioDePrueba
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(177, 232);
+            this.panel1.Size = new System.Drawing.Size(177, 178);
             this.panel1.TabIndex = 6;
             // 
             // Form1
@@ -141,7 +141,7 @@ namespace FormularioDePrueba
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(90)))), ((int)(((byte)(119)))));
-            this.ClientSize = new System.Drawing.Size(601, 232);
+            this.ClientSize = new System.Drawing.Size(601, 178);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
